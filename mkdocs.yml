@@ -1,0 +1,8 @@
+site_name: name-of-your-site
+theme:
+   name: 'material'
+
+nav:
+  - Getting started: index.md
+  - Install: install.md
+  - Example: example.md
