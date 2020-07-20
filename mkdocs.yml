@@ -1,8 +1,106 @@
-site_name: name-of-your-site
-theme:
-   name: 'material'
+site_name: Writing with Digital Tech
+site_url: https://danieljcard1.github.io/writ-dt/
+site_author: Dan Card
+site_description: Documentation site for teaching and learning to write with digital technology.
+
+# Repository
+
+#repo_name: danieljcard1/writing-with-digital-technology
+#repo_url: https://github.com/danieljcard1/writing-with-digital-technology
+#edit_uri: ""
+
+
+# Copyright
+
+copyright: null
+
+# Configuration
+theme: 
+  name: material
+  #custom_dir: custom_theme/
+  language: en
+  features:
+    - tabs
+  palette:
+    scheme: preference
+    primary: indigo
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: logo
+  favicon: assets/favicon.png  
+
+  # Custom CSS
+#extra_css:
+#  - 'stylesheets/extra.css'
+
+# Plugins
+plugins:
+  - search
+  - awesome-pages
+
+
+# Extensions
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.attr_list
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  # - pymdownx.highlight:
+  #     linenums_style: pymdownx-inline
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: danieljcard1
+      repo: writing-with-digital-technology
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  
+
+# Page tree
 
 nav:
-  - Getting started: index.md
-  - Install: install.md
-  - Example: example.md
+  - Home: index.md
+  - Explainers:
+    - What is a text editor?: explainers/text-editor.md
+    - What is the command line interface?: explainers/command-line-interface.md
+    - What is HTML?: explainers/html.md
+    - What is a server?: explainers/server.md
+    - What is a static site generator?: explainers/static-site-generator.md
+    - Static vs dynamic sites: explainers/static-vs-dynamic.md
+    - What is markdown?: explainers/markdown.md
+    - What is XML?: explainers/xml.md
+    - What is DITA?: explainers/dita.md
+  - Tutorials:
+    - Build a local, static webpage with HTML: tutorials/build-local-static-HTML-site.md
+    - Publish your site with Github Pages: tutorials/publish-site-github-pages.md
+    - Use DITA to create structured content in XML: tutorials/use-DITA-structured-authoring.md
+
+#  - Resources:
+#    - Learning HTML: 
+#    - Learning CSS: 
+#    - Learning Markdown:  
