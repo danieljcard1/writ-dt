@@ -91,6 +91,11 @@ Since the release of the first iteration in 2004, many variations of Markdown ha
 
 Markdown files are simply plain text, so you can create them in any text editor, but some editors have additional features that make writing in Markdown more enjoyable. A quick google will produce plenty of lists like this one: [4 open source Markdown editors](https://opensource.com/article/18/11/markdown-editors).
 
+If you want an editor specialized for Markdown, here are a couple of options:
+
+* [Markdown Pad / Markdown Pad 2 (PC)](http://markdownpad.com/)
+* [iA Writer (Mac)](https://ia.net/writer)
+
 Or, if you want to try out the syntax right now without leaving your browser, here are some in-browser Markdown editors:
 
 * [Dillinger - Online Markdown Editor](https://stackedit.io/app#)
