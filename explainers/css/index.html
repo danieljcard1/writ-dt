@@ -21,7 +21,7 @@
     
     
       
-        <title>What is CSS? - Writing with Digital Tech</title>
+        <title>CSS - Writing with Digital Tech</title>
       
     
     
@@ -100,7 +100,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              What is CSS?
+              CSS
             
           </span>
         </div>
@@ -149,14 +149,16 @@
         
           
 
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href="../.." class="md-tabs__link md-tabs__link--active">
+      <a href="../.." class="md-tabs__link">
         Home
       </a>
     
@@ -168,7 +170,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../text-editor/" class="md-tabs__link">
+        <a href="../text-editor/" class="md-tabs__link md-tabs__link--active">
           Resources
         </a>
       
@@ -230,10 +232,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Resources
@@ -253,8 +257,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../text-editor/" title="What is a text editor?" class="md-nav__link">
-      What is a text editor?
+    <a href="../text-editor/" title="Text editor?" class="md-nav__link">
+      Text editor?
     </a>
   </li>
 
@@ -265,9 +269,66 @@
 
 
   <li class="md-nav__item">
-    <a href="../html/" title="What is HTML?" class="md-nav__link">
-      What is HTML?
+    <a href="../html/" title="HTML" class="md-nav__link">
+      HTML
     </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        CSS
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="CSS" class="md-nav__link md-nav__link--active">
+      CSS
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#intro-to-css" class="md-nav__link">
+    Intro to CSS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#css-and-accessibility" class="md-nav__link">
+    CSS and Accessibility
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -303,8 +364,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tutorials/build-local-static-HTML-site/" title="Build your intro site with HTML" class="md-nav__link">
-      Build your intro site with HTML
+    <a href="../../tutorials/build-local-static-HTML-site/" title="Build a static website, part 1 (HTML)" class="md-nav__link">
+      Build a static website, part 1 (HTML)
     </a>
   </li>
 
@@ -331,6 +392,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#intro-to-css" class="md-nav__link">
+    Intro to CSS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#css-and-accessibility" class="md-nav__link">
+    CSS and Accessibility
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -346,10 +429,20 @@
                 
                 
                 <h1 id="what-is-css">What is CSS?<a class="headerlink" href="#what-is-css" title="Permanent link">&para;</a></h1>
-<h1 id="css-asics">CSS asics<a class="headerlink" href="#css-asics" title="Permanent link">&para;</a></h1>
-<h1 id="the-power-of-css">The power of CSS<a class="headerlink" href="#the-power-of-css" title="Permanent link">&para;</a></h1>
+<p>CSS stands for Cascading Style Sheets. While HTML provides the structure of a webpage and javascript allows us to add functionality, CSS controls the style. When we connect our CSS to HTML, we reunite content and presentation into a coherent webpage. </p>
+<p>This separation is important, though. It allows us as writer-designers to focus on content and presentation separately, even if they will be reunited in the final product. Further, it allows us to apply stylistic changes more efficiently. Just as the styles pane allows us to apply to documents created in Microsoft Word or Google Docs, CSS allows us to designate that we want <em>all</em> headings to be a certain font, size, color, etc. instead of manually modifying the style of each individual heading. </p>
+<p>For an example of the enormous control  of presentation that CSS provides, check out <a href="http://www.csszengarden.com/">CSS Zen Garden</a>. The HTML is the same in each example; only the CSS has been modified. </p>
+<h2 id="intro-to-css">Intro to CSS<a class="headerlink" href="#intro-to-css" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="http://www.csszengarden.com/">CSS Zen Garden</a> </li>
+<li><a href="https://marksheet.io/css-basics.html">CSS Basics</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS (collected resources from Mozilla Web Docs)</a></li>
+<li><a href="https://css-tricks.com/guides/">CSS Guides on css-tricks.com</a></li>
+</ul>
+<h2 id="css-and-accessibility">CSS and Accessibility<a class="headerlink" href="#css-and-accessibility" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://accessibility.umn.edu/what-you-can-do/develop-accessible-websites/html-css">Accessible U: HTML and CSS</a></li>
+<li><a href="https://webaim.org/techniques/css/">WebAIM: Accessible CSS</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_Layout_and_Accessibility">MDN Web Docs: CSS Grid Layout and Accessibility</a></li>
 </ul>
                 
                   
@@ -359,7 +452,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: 2020-09-14
+      Last update: 2020-09-19
     
   </small>
 </div>
@@ -378,6 +471,41 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../html/" title="HTML" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                HTML
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../../tutorials/build-local-static-HTML-site/" title="Build a static website, part 1 (HTML)" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Build a static website, part 1 (HTML)
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
