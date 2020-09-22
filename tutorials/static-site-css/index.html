@@ -1,0 +1,799 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation site for teaching and learning to write with digital technology.">
+      
+      
+        <link rel="canonical" href="https://danieljcard1.github.io/writ-dt/tutorials/static-site-css/">
+      
+      
+        <meta name="author" content="Dan Card">
+      
+      <link rel="shortcut icon" href="../../assets/logo-1.svg">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.12">
+    
+    
+      
+        <title>Build a static website, part 2 (CSS) - Writing with Digital Tech</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4dd2dd8d.min.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.6a5ad368.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#ffffff">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    
+      
+        
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-176845978-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview",document.location.pathname)})</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="white" data-md-color-accent="indigo">
+  
+    
+      <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#build-a-static-site-part-2-css" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://danieljcard1.github.io/writ-dt/" title="Writing with Digital Tech" class="md-header-nav__button md-logo" aria-label="Writing with Digital Tech">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Writing with Digital Tech
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Build a static website, part 2 (CSS)
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/danieljcard1/writ-dt" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    writ-dt
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../explainers/text-editor/" class="md-tabs__link">
+          Resources
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../build-local-static-HTML-site/" class="md-tabs__link md-tabs__link--active">
+          Guides
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://danieljcard1.github.io/writ-dt/" title="Writing with Digital Tech" class="md-nav__button md-logo" aria-label="Writing with Digital Tech">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Writing with Digital Tech
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/danieljcard1/writ-dt" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    writ-dt
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Resources
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Resources" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Resources
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../explainers/text-editor/" title="Text editor?" class="md-nav__link">
+      Text editor?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../explainers/html/" title="HTML" class="md-nav__link">
+      HTML
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../explainers/css/" title="CSS" class="md-nav__link">
+      CSS
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Guides
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Guides" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Guides
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../build-local-static-HTML-site/" title="Build a static website, part 1 (HTML)" class="md-nav__link">
+      Build a static website, part 1 (HTML)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Build a static website, part 2 (CSS)
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="Build a static website, part 2 (CSS)" class="md-nav__link md-nav__link--active">
+      Build a static website, part 2 (CSS)
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-begin" class="md-nav__link">
+    Before you begin
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#revisit-your-indexhtml-file" class="md-nav__link">
+    Revisit your index.html file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-your-stylesheet" class="md-nav__link">
+    Create your stylesheet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tell-the-browser-where-to-find-the-stylesheet" class="md-nav__link">
+    Tell the browser where to find the stylesheet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-css-to-your-stylesheet" class="md-nav__link">
+    Add CSS to your stylesheet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-up-the-layout" class="md-nav__link">
+    Set up the layout
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#continue-to-add-and-modify-your-css" class="md-nav__link">
+    Continue to add and modify your CSS
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-begin" class="md-nav__link">
+    Before you begin
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#revisit-your-indexhtml-file" class="md-nav__link">
+    Revisit your index.html file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-your-stylesheet" class="md-nav__link">
+    Create your stylesheet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tell-the-browser-where-to-find-the-stylesheet" class="md-nav__link">
+    Tell the browser where to find the stylesheet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-css-to-your-stylesheet" class="md-nav__link">
+    Add CSS to your stylesheet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-up-the-layout" class="md-nav__link">
+    Set up the layout
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#continue-to-add-and-modify-your-css" class="md-nav__link">
+    Continue to add and modify your CSS
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="build-a-static-site-part-2-css">Build a static site, part 2 (CSS)<a class="headerlink" href="#build-a-static-site-part-2-css" title="Permanent link">&para;</a></h1>
+<p>In this guide, I'll provide resources and direction to help you add style to a static site. We'll accomplish this with CSS.  </p>
+<h2 id="before-you-begin">Before you begin<a class="headerlink" href="#before-you-begin" title="Permanent link">&para;</a></h2>
+<p>This guide assumes some comfort using a <a href="explainers/text-editor.md">text editor</a> and working knowledge of <a href="explainers/html.md">HTML</a> (e.g., you know the common elements and can contruct the skeleton of a webpage).</p>
+<p>In addition, this guide assumes you've begun to learn the basics of CSS. If you haven't already, now is a great time to check out these <a href="explainers/css.md">CSS resources</a>. </p>
+<h2 id="revisit-your-indexhtml-file">Revisit your index.html file<a class="headerlink" href="#revisit-your-indexhtml-file" title="Permanent link">&para;</a></h2>
+<p>For the rest of this guide, I'll be modifying a sample index.html file. When I open my file in a browser, this is how it renders:</p>
+<p><img _:="{:" alt="screenshot" loading="lazy" src="../assets/index-sample-no-css.png" style="border-style:solid; border-width:1px" title="browser view of sample index.html page with no CSS" /></p>
+<p>Take note of the structure of my file. We'll be referencing these particular HTML elements and class names as we add style in our external stylesheet.</p>
+<p><div class="highlight"><pre><span></span><code><span class="lineno" data-linenos=" 1 "></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="lineno" data-linenos=" 2 "></span><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">en</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos=" 3 "></span>
+<span class="lineno" data-linenos=" 4 "></span>  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos=" 5 "></span>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos=" 6 "></span>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>My test page<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos=" 7 "></span>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;description&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;The first draft of a personal website&quot;</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos=" 8 "></span>    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;styles/style.css&quot;</span><span class="p">&gt;</span> 
+<span class="lineno" data-linenos=" 9 "></span>  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos="10 "></span>
+<span class="lineno" data-linenos="11 "></span>  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos="12 "></span>
+<span class="lineno" data-linenos="13 "></span>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;wrapper&quot;</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos="14 "></span>
+<span class="lineno" data-linenos="15 "></span>      <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos="16 "></span>        <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Dan.com<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos="17 "></span>      <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos="18 "></span>
+<span class="lineno" data-linenos="19 "></span>      <span class="p">&lt;</span><span class="nt">nav</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;navbar&quot;</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos="20 "></span>        <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;nav-links&quot;</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos="21 "></span>          <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;nav-item&quot;</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos="22 "></span>            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;projects.html&quot;</span><span class="p">&gt;</span>Projects<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos="23 "></span>          <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos="24 "></span>          <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;nav-item&quot;</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos="25 "></span>            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;CV.html&quot;</span><span class="p">&gt;</span>CV<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos="26 "></span>          <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos="27 "></span>        <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos="28 "></span>      <span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos="29 "></span>
+<span class="lineno" data-linenos="30 "></span>      <span class="p">&lt;</span><span class="nt">main</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;content&quot;</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos="31 "></span>        <span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos="32 "></span>          <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>This is an h2 inside an article element<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos="33 "></span>          <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>The article element is inside the main element.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos="34 "></span>          <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;images/dan-card.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Dan Card&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;border-radius: 50%; max-width: 25%;&quot;</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos="35 "></span>        <span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos="36 "></span>      <span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos="37 "></span>
+<span class="lineno" data-linenos="38 "></span>      <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos="39 "></span>        Dan Card. No need to copyright, 2020.
+<span class="lineno" data-linenos="40 "></span>      <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos="41 "></span>
+<span class="lineno" data-linenos="42 "></span>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos="43 "></span>
+<span class="lineno" data-linenos="44 "></span>  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos="45 "></span>
+<span class="lineno" data-linenos="46 "></span><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span> 
+</code></pre></div>
+If it's helpful, you can create a new website folder on your desktop and copy the code from my sample into a new index.html file.</p>
+<h2 id="create-your-stylesheet">Create your stylesheet<a class="headerlink" href="#create-your-stylesheet" title="Permanent link">&para;</a></h2>
+<p>My "website" currently lives in a folder called "portfolio-site-draft" on my desktop. The folder structure looks like this:</p>
+<p><div class="highlight"><pre><span></span><code>portfolio-site-draft
+│  
+└───index.html
+│  
+└───images
+│   │   dan-card.jpg
+|
+└───scripts    
+|
+└───styles
+    │   style.css
+</code></pre></div>
+The root level of my website folder contains one HTML file and three folders: one for images, one for scripts, and one for styles. A photo of me is in the images folder and my blank stylesheet is in the styles folder. </p>
+<p>If you don't already have a CSS file named "style" in your styles folder, now is a great time to add one! </p>
+<h2 id="tell-the-browser-where-to-find-the-stylesheet">Tell the browser where to find the stylesheet<a class="headerlink" href="#tell-the-browser-where-to-find-the-stylesheet" title="Permanent link">&para;</a></h2>
+<p>I recommend using an external stylesheet instead of embedding your CSS via the <code class="highlight"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span></code> tag. Open index.html in your text editor and add the contents of line 8 between the <code class="highlight"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span></code> tags. This will tell the browser where to find your external stylesheet when it tries to render your HTML.</p>
+<div class="highlight"><pre><span></span><code><span class="lineno" data-linenos=" 1 "></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="lineno" data-linenos=" 2 "></span><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">en</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos=" 3 "></span>
+<span class="lineno" data-linenos=" 4 "></span>  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos=" 5 "></span>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos=" 6 "></span>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>My test page<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos=" 7 "></span>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;description&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;The first draft of a personal website&quot;</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos=" 8 "></span><span class="hll">    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;styles/style.css&quot;</span><span class="p">&gt;</span> 
+</span><span class="lineno" data-linenos=" 9 "></span>  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="lineno" data-linenos="10 "></span>
+<span class="lineno" data-linenos="11 "></span>  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</code></pre></div>
+
+<h2 id="add-css-to-your-stylesheet">Add CSS to your stylesheet<a class="headerlink" href="#add-css-to-your-stylesheet" title="Permanent link">&para;</a></h2>
+<p>Now that we've linked our stylesheet and index file, let's add some style to our site. Open style.css in your text editor and and add the following:</p>
+<p><div class="highlight"><pre><span></span><code><span class="lineno" data-linenos="1 "></span><span class="nt">html</span> <span class="p">{</span>
+<span class="lineno" data-linenos="2 "></span>    <span class="k">box-sizing</span><span class="p">:</span> <span class="kc">border-box</span><span class="p">;</span>
+<span class="lineno" data-linenos="3 "></span>  <span class="p">}</span>
+</code></pre></div>
+Here, we apply the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing">CSS box-sizing</a> property to everything within the <code class="highlight"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span></code> tags. We set the property value to <code class="highlight"><span class="nt">border-box</span></code> to make it easier to work with layout elements later. </p>
+<details class="tip" open="open"><summary>Formatting your CSS</summary><p>There are many <a href="https://css-tricks.com/different-ways-to-format-css/">valid ways to format your CSS</a>. I have my own preferences, but you should figure out which approach you like and stick with it! </p>
+</details>
+<p>Let's make a change that we can actually see in our browser. Specify the font for everything between the <code class="highlight"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span></code> tags.</p>
+<p><div class="highlight"><pre><span></span><code><span class="lineno" data-linenos="1 "></span><span class="nt">html</span> <span class="p">{</span>
+<span class="lineno" data-linenos="2 "></span>    <span class="k">box-sizing</span><span class="p">:</span> <span class="kc">border-box</span><span class="p">;</span>
+<span class="lineno" data-linenos="3 "></span>  <span class="p">}</span>
+<span class="lineno" data-linenos="4 "></span>
+<span class="lineno" data-linenos="5 "></span><span class="hll"><span class="nt">body</span> <span class="p">{</span>
+</span><span class="lineno" data-linenos="6 "></span><span class="hll">    <span class="k">font-family</span><span class="p">:</span> <span class="s1">&#39;Open Sans&#39;</span><span class="p">,</span> <span class="n">Verdana</span><span class="p">,</span> <span class="kc">sans-serif</span><span class="p">;</span>
+</span><span class="lineno" data-linenos="7 "></span><span class="hll">  <span class="p">}</span>
+</span></code></pre></div>
+I can't be sure every browser will have Open Sans, so I add Verdana or any sans-serif as fallback options. Save your stylesheet and refresh your browser. Did the fonts change?</p>
+<h2 id="set-up-the-layout">Set up the layout<a class="headerlink" href="#set-up-the-layout" title="Permanent link">&para;</a></h2>
+<p>CSS offers many ways to approach layout-- so many that it can be a little overwhelming. There is <code class="highlight"><span class="nt">float</span></code>, <code class="highlight"><span class="nt">positioning</span></code>, <code class="highlight"><span class="nt">grid</span></code>, <code class="highlight"><span class="nt">flexbox</span></code>, and more. For this guide, I'm using <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox">Flexbox</a>.</p>
+<p>If we look back at my index file, we see that <code class="highlight"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;wrapper&quot;</span><span class="p">&gt;</span></code> contains our <code class="highlight"><span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span></code>, <code class="highlight"><span class="p">&lt;</span><span class="nt">nav</span><span class="p">&gt;</span></code>, <code class="highlight"><span class="p">&lt;</span><span class="nt">main</span><span class="p">&gt;</span></code>, and <code class="highlight"><span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span></code>. </p>
+<p>We can apply the <code class="highlight"><span class="nt">display</span></code> property to the <code class="highlight"><span class="p">.</span><span class="nc">wrapper</span></code> selector. Since <code class="highlight"><span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span></code>, <code class="highlight"><span class="p">&lt;</span><span class="nt">nav</span><span class="p">&gt;</span></code>, <code class="highlight"><span class="p">&lt;</span><span class="nt">main</span><span class="p">&gt;</span></code>, and <code class="highlight"><span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span></code> are all children of <code class="highlight"><span class="p">.</span><span class="nc">wrapper</span></code>, they will inherit the value we set for the <code class="highlight"><span class="nt">display</span></code> property. </p>
+<p>In this case, we'll use <code class="highlight"><span class="nt">display</span><span class="o">:</span> <span class="nt">flex</span></code> and <code class="highlight"><span class="nt">flex-direction</span><span class="o">:</span> <span class="nt">column</span></code>. I'm also setting <code class="highlight"><span class="nt">min-height</span></code> and <code class="highlight"><span class="nt">padding</span></code>. You can worry about those later or play with the values now to get a sense of what they do. </p>
+<p><div class="highlight"><pre><span></span><code><span class="lineno" data-linenos=" 6 "></span><span class="nt">body</span> <span class="p">{</span>
+<span class="lineno" data-linenos=" 7 "></span>    <span class="k">font-family</span><span class="p">:</span> <span class="s1">&#39;Open Sans&#39;</span><span class="p">,</span> <span class="n">Verdana</span><span class="p">,</span> <span class="kc">sans-serif</span><span class="p">;</span>
+<span class="lineno" data-linenos=" 8 "></span><span class="p">}</span>
+<span class="lineno" data-linenos=" 9 "></span>
+<span class="lineno" data-linenos="10 "></span><span class="hll"><span class="p">.</span><span class="nc">wrapper</span> <span class="p">{</span>
+</span><span class="lineno" data-linenos="11 "></span><span class="hll">    <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
+</span><span class="lineno" data-linenos="12 "></span><span class="hll">    <span class="k">flex-direction</span><span class="p">:</span> <span class="kc">column</span><span class="p">;</span>
+</span><span class="lineno" data-linenos="13 "></span><span class="hll">    <span class="k">min-height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">vh</span><span class="p">;</span>
+</span><span class="lineno" data-linenos="14 "></span><span class="hll">    <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+</span><span class="lineno" data-linenos="15 "></span><span class="hll"><span class="p">}</span>
+</span></code></pre></div>
+Let's prepare a space to designate the style for each of <code class="highlight"><span class="p">.</span><span class="nc">wrapper</span></code> child elements.</p>
+<p><div class="highlight"><pre><span></span><code><span class="lineno" data-linenos="10 "></span><span class="p">.</span><span class="nc">wrapper</span> <span class="p">{</span>
+<span class="lineno" data-linenos="11 "></span>    <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
+<span class="lineno" data-linenos="12 "></span>    <span class="k">flex-direction</span><span class="p">:</span> <span class="kc">column</span><span class="p">;</span>
+<span class="lineno" data-linenos="13 "></span>    <span class="k">min-height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">vh</span><span class="p">;</span>
+<span class="lineno" data-linenos="14 "></span>    <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+<span class="lineno" data-linenos="15 "></span><span class="p">}</span>
+<span class="lineno" data-linenos="16 "></span>
+<span class="lineno" data-linenos="17 "></span><span class="nt">header</span> <span class="p">{</span>
+<span class="lineno" data-linenos="18 "></span>
+<span class="lineno" data-linenos="19 "></span><span class="p">}</span>
+<span class="lineno" data-linenos="20 "></span>
+<span class="lineno" data-linenos="21 "></span><span class="nt">nav</span> <span class="p">{</span>
+<span class="lineno" data-linenos="22 "></span>
+<span class="lineno" data-linenos="23 "></span><span class="p">}</span>
+<span class="lineno" data-linenos="24 "></span>
+<span class="lineno" data-linenos="25 "></span><span class="nt">main</span> <span class="p">{</span>
+<span class="lineno" data-linenos="26 "></span>
+<span class="lineno" data-linenos="27 "></span><span class="p">}</span>
+<span class="lineno" data-linenos="28 "></span>
+<span class="lineno" data-linenos="29 "></span><span class="nt">footer</span> <span class="p">{</span>
+<span class="lineno" data-linenos="30 "></span>
+<span class="lineno" data-linenos="31 "></span><span class="p">}</span>
+</code></pre></div>
+Now let's temporarily add some color to give us a sense of what elements are where.</p>
+<p><div class="highlight"><pre><span></span><code><span class="lineno" data-linenos="17 "></span><span class="nt">header</span> <span class="p">{</span>
+<span class="lineno" data-linenos="18 "></span>    <span class="k">background-color</span><span class="p">:</span> <span class="kc">aqua</span><span class="p">;</span>
+<span class="lineno" data-linenos="19 "></span><span class="p">}</span>
+<span class="lineno" data-linenos="20 "></span>
+<span class="lineno" data-linenos="21 "></span><span class="nt">nav</span> <span class="p">{</span>
+<span class="lineno" data-linenos="22 "></span>    <span class="k">background-color</span><span class="p">:</span> <span class="kc">blanchedalmond</span><span class="p">;</span>
+<span class="lineno" data-linenos="23 "></span><span class="p">}</span>
+<span class="lineno" data-linenos="24 "></span>
+<span class="lineno" data-linenos="25 "></span><span class="nt">main</span> <span class="p">{</span>
+<span class="lineno" data-linenos="26 "></span>    <span class="k">background-color</span><span class="p">:</span> <span class="kc">cornflowerblue</span><span class="p">;</span>
+<span class="lineno" data-linenos="27 "></span><span class="p">}</span>
+<span class="lineno" data-linenos="28 "></span>
+<span class="lineno" data-linenos="29 "></span><span class="nt">footer</span> <span class="p">{</span>
+<span class="lineno" data-linenos="30 "></span>    <span class="k">background-color</span><span class="p">:</span> <span class="kc">darkseagreen</span><span class="p">;</span>
+<span class="lineno" data-linenos="31 "></span><span class="p">}</span>
+</code></pre></div>
+I'll save those changes to style.css and refresh my browser. Now index.html renders like this:</p>
+<p><img _:="{:" alt="screenshot" loading="lazy" src="../assets/index-sample-layout.png" style="border-style:solid; border-width:1px" title="browser view of sample index.html page with flexbox layout elements" /></p>
+<details class="tip" open="open"><summary>Using color</summary><p>You probably want to replace these colors at some point, but temporarily adding some color can be really helpful as you continue to make modifications to your elements. As you choose your own colors, consider how your <a href="https://www.w3.org/WAI/tips/designing/">color scheme will affect the accessibility</a> of your site. </p>
+<p>Google's Material design system offers some helpful guidance on <a href="https://material.io/design/usability/accessibility.html">accessibility</a> broadly and <a href="https://material.io/design/color/text-legibility.html">color and text legibility</a> more specifically.</p>
+<p>You can also use <a href="https://webaim.org/resources/contrastchecker/">WebAIM's contrast checker</a>. </p>
+<p>When in doubt, black on white and white on black are unmatched when it comes to contrast!</p>
+</details>
+<h2 id="continue-to-add-and-modify-your-css">Continue to add and modify your CSS<a class="headerlink" href="#continue-to-add-and-modify-your-css" title="Permanent link">&para;</a></h2>
+<p>For example, let's say you want your <code class="highlight"><span class="nt">main</span></code> element to stretch downward so your footer isn't floating in the middle of the viewport. You also want the contents of <code class="highlight"><span class="nt">main</span></code> to be offset from edges of the box. We can use <code class="highlight"><span class="nt">flex-grow</span></code> and <code class="highlight"><span class="nt">padding</span></code> to accomplish this. </p>
+<p><div class="highlight"><pre><span></span><code><span class="lineno" data-linenos="25 "></span><span class="nt">main</span> <span class="p">{</span>
+<span class="lineno" data-linenos="26 "></span>    <span class="k">background-color</span><span class="p">:</span> <span class="kc">cornflowerblue</span><span class="p">;</span>
+<span class="lineno" data-linenos="27 "></span>    <span class="k">flex-grow</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
+<span class="lineno" data-linenos="28 "></span>    <span class="k">padding</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+<span class="lineno" data-linenos="29 "></span><span class="p">}</span>
+</code></pre></div>
+It can be difficult at first to understand how the many properties and values will modify your site, but hopefully you now have the foundation to keep experimenting!</p>
+                
+                  
+                    
+
+<hr>
+<div class="md-source-date">
+  <small>
+    
+      Last update: 2020-09-22
+    
+  </small>
+</div>
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../build-local-static-HTML-site/" title="Build a static website, part 1 (HTML)" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Build a static website, part 1 (HTML)
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.3636a4ec.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e9fe3281.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: ["tabs"],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

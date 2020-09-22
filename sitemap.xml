@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://danieljcard1.github.io/writ-dt/</loc>
-     <lastmod>2020-09-19</lastmod>
+     <lastmod>2020-09-22</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://danieljcard1.github.io/writ-dt/explainers/text-editor/</loc>
-     <lastmod>2020-09-19</lastmod>
+     <lastmod>2020-09-22</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://danieljcard1.github.io/writ-dt/explainers/html/</loc>
-     <lastmod>2020-09-19</lastmod>
+     <lastmod>2020-09-22</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://danieljcard1.github.io/writ-dt/explainers/css/</loc>
-     <lastmod>2020-09-19</lastmod>
+     <lastmod>2020-09-22</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://danieljcard1.github.io/writ-dt/tutorials/build-local-static-HTML-site/</loc>
-     <lastmod>2020-09-19</lastmod>
+     <lastmod>2020-09-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://danieljcard1.github.io/writ-dt/tutorials/static-site-css/</loc>
+     <lastmod>2020-09-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
