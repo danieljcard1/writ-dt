@@ -11,7 +11,7 @@
         <meta name="description" content="Documentation site for teaching and learning to write with digital technology.">
       
       
-        <link rel="canonical" href="https://danieljcard1.github.io/writ-dt/explainers/dita/">
+        <link rel="canonical" href="https://danieljcard1.github.io/writ-dt/explainers/git-github/">
       
       
         <meta name="author" content="Dan Card">
@@ -21,7 +21,7 @@
     
     
       
-        <title>Dita - Writing with Digital Tech</title>
+        <title>Git and Github - Writing with Digital Tech</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#features" class="md-skip">
+        <a href="#git-and-github" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Dita
+              Git and Github
             
           </span>
         </div>
@@ -162,14 +162,16 @@
         
           
 
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href="../.." class="md-tabs__link md-tabs__link--active">
+      <a href="../.." class="md-tabs__link">
         Home
       </a>
     
@@ -181,7 +183,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../text-editor/" class="md-tabs__link">
+        <a href="../text-editor/" class="md-tabs__link md-tabs__link--active">
           Resources
         </a>
       
@@ -256,10 +258,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Resources
@@ -325,11 +329,70 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../git-github/" title="Git and Github" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Git and Github
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="Git and Github" class="md-nav__link md-nav__link--active">
       Git and Github
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#git-a-distributed-version-control-system" class="md-nav__link">
+    Git: a distributed version control system
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github-a-hosting-platform-for-version-control-and-collaboration" class="md-nav__link">
+    Github: a hosting platform for version control and collaboration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github-pages" class="md-nav__link">
+    Github Pages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-communication-and-gitgithub" class="md-nav__link">
+    Technical Communication and Git/Github
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -414,6 +477,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -422,22 +487,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
-    Features
+  <a href="#git-a-distributed-version-control-system" class="md-nav__link">
+    Git: a distributed version control system
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-does-dita-xml-look-like" class="md-nav__link">
-    What does DITA XML look like?
+  <a href="#github-a-hosting-platform-for-version-control-and-collaboration" class="md-nav__link">
+    Github: a hosting platform for version control and collaboration
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#sources" class="md-nav__link">
-    Sources
+  <a href="#github-pages" class="md-nav__link">
+    Github Pages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-communication-and-gitgithub" class="md-nav__link">
+    Technical Communication and Git/Github
   </a>
   
 </li>
@@ -458,18 +530,27 @@
                   
                 
                 
-                  <h1>Dita</h1>
-                
-                <p>DITA stands for <strong>Darwin Information Typing Architecture</strong>. It is an open XML standard that is developed and maintained by the OASIS DITA Technical Committee</p>
-<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
-<p><strong>Content Reuse.</strong> Content is written in small, tagged chunks to facilitate reuse across multiple documents and formats.</p>
-<p><strong>Information Typing.</strong> DITA defines different types of information, specifically those that are frequently used by technical communicators.</p>
-<p><strong>Tagging facilitates translation and localization.</strong> Companies can save money by translating and localizing bits of content once as opposed to every time it appears in a document.</p>
-<p><strong>Conditional text.</strong> The DITA standard includes support for conditional text, so you specify what appears in different documents and outputs, e.g. exclude short descriptions of basic terms for expert audiences.</p>
-<h2 id="what-does-dita-xml-look-like">What does DITA XML look like?<a class="headerlink" href="#what-does-dita-xml-look-like" title="Permanent link">&para;</a></h2>
-<p>Lorem ipsum...</p>
-<h2 id="sources">Sources<a class="headerlink" href="#sources" title="Permanent link">&para;</a></h2>
-<p><a href="https://en.wikipedia.org/wiki/Darwin_Information_Typing_Architecture">Wikipedia. <em>Darwin Information Typing Architecture</em></a></p>
+                <h1 id="git-and-github">Git and Github<a class="headerlink" href="#git-and-github" title="Permanent link">&para;</a></h1>
+<p>When we write documents in Google Docs, we can collaborate with others in real time, share documents, download them, and store them in Google Drive. At least for me, Google Drive is now my central repository for all the documents I used to write in Microsoft Word. But how do we store, manage, share, and collaborate on files that Google Drive isn't built for, e.g. the HTML and CSS files that make a webpage?</p>
+<h2 id="git-a-distributed-version-control-system">Git: a distributed version control system<a class="headerlink" href="#git-a-distributed-version-control-system" title="Permanent link">&para;</a></h2>
+<p>To understand Github, we first need to understand <a href="https://git-scm.com/">Git</a>. Git is an open-source <a href="https://betterexplained.com/articles/a-visual-guide-to-version-control/">distributed version control system (DVCS)</a>. Following my analogy to Google Drive, git provides functionality similar to "track changes" and "version history" in Google Docs. Git allows us to store, share, download, and edit files and folders, and it keeps a detailed record of every change we make.</p>
+<p>Git is primarily used by developers, but technical communicators increasingly find themselves using a DVCS, whether it's git or one of the handful of alternatives.</p>
+<p>As such, learning the language of git and getting some hands on practice can be incredibly valuable to technical communicators. </p>
+<p>For a great introduction to the most common Git commands, take 10 minutes to read <a href="https://guides.github.com/introduction/git-handbook/">What is a version control system?</a> in Github Guides' Git Handbook. </p>
+<h2 id="github-a-hosting-platform-for-version-control-and-collaboration">Github: a hosting platform for version control and collaboration<a class="headerlink" href="#github-a-hosting-platform-for-version-control-and-collaboration" title="Permanent link">&para;</a></h2>
+<p>Much like Google Drive, Github is a hosting platform. While Git provides the functionality to make and track changes to files and folders, Github is a hosting platform that leverages that functionality so that we can manage content and collaborate with others.</p>
+<p>While Git can be used from the <a href="explainers/command-line-interface.md">command line</a>, Github (and <a href="https://desktop.github.com/">Github Desktop</a>) also enable you to use Git without ever entering the command line. </p>
+<p>To learn the basics of Github, complete the <a href="https://guides.github.com/activities/hello-world/">Hello World project</a> in Github Guides' Git Handbook. </p>
+<h2 id="github-pages">Github Pages<a class="headerlink" href="#github-pages" title="Permanent link">&para;</a></h2>
+<p>We can use Git and Github for to manage and collaborate on code (e.g. the HTML and CSS files you might use to create a static website for your portfolio), but Github will also help us turn those files into a publically-available website through a service called Github Pages. Github Pages is one of <a href="https://geekflare.com/best-static-site-hosting-platform/">many static site hosting services</a>. </p>
+<p>Learn more about <a href="https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages">working with Github Pages</a> or check out <a href="https://pages.github.com/">Github's Pages tutorial</a>.</p>
+<h2 id="technical-communication-and-gitgithub">Technical Communication and Git/Github<a class="headerlink" href="#technical-communication-and-gitgithub" title="Permanent link">&para;</a></h2>
+<p>Technical communicators can use Github to host their portfolio website, but given the prevalence of git and github-based workflows in the industry, a technical communicator's Github account can be a really important part of that portfolio.</p>
+<ul>
+<li>Praneesha Chandrsiri's <a href="https://medium.com/technical-writing-is-easy/github-basics-in-the-eyes-of-a-technical-writer-c36d8cb8f1a0">Github basics in the eyes of a technical writer</a></li>
+<li>Sarah Maddox's <a href="https://ffeathers.wordpress.com/2016/01/24/git-based-technical-writing-workflow-notes-from-a-tc-camp-session/">notes on a Git-based technical writing workflow</a></li>
+<li>Tom Johnson's blog post on <a href="https://idratherbewriting.com/2015/02/18/the-genius-of-github/">the genius of Github and how it can transform technical communication</a> </li>
+</ul>
                 
                   
                     
@@ -478,7 +559,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: 2020-07-20
+      Last update: 2020-09-25
     
   </small>
 </div>
@@ -497,6 +578,41 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../command-line-interface/" title="Command line interface" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Command line interface
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../../tutorials/build-local-static-HTML-site/" title="Build a static website, part 1 (HTML)" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Build a static website, part 1 (HTML)
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

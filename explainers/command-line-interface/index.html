@@ -162,14 +162,16 @@
         
           
 
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href="../.." class="md-tabs__link md-tabs__link--active">
+      <a href="../.." class="md-tabs__link">
         Home
       </a>
     
@@ -181,7 +183,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../text-editor/" class="md-tabs__link">
+        <a href="../text-editor/" class="md-tabs__link md-tabs__link--active">
           Resources
         </a>
       
@@ -256,10 +258,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Resources
@@ -279,8 +283,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../text-editor/" title="Text editor?" class="md-nav__link">
-      Text editor?
+    <a href="../text-editor/" title="Text editor" class="md-nav__link">
+      Text editor
     </a>
   </li>
 
@@ -305,6 +309,78 @@
   <li class="md-nav__item">
     <a href="../css/" title="CSS" class="md-nav__link">
       CSS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Command line interface
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="Command line interface" class="md-nav__link md-nav__link--active">
+      Command line interface
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-simple-illustrative-example" class="md-nav__link">
+    A simple, illustrative example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-use-the-command-line" class="md-nav__link">
+    Why use the command line?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learn-more" class="md-nav__link">
+    Learn more
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../git-github/" title="Git and Github" class="md-nav__link">
+      Git and Github
     </a>
   </li>
 
@@ -359,6 +435,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/publish-site-github-pages/" title="Publish your site with Github Pages" class="md-nav__link">
+      Publish your site with Github Pages
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -400,36 +488,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#learn-more-about-the-command-line-interface" class="md-nav__link">
-    Learn more about the command line interface
+  <a href="#learn-more" class="md-nav__link">
+    Learn more
   </a>
-  
-    <nav class="md-nav" aria-label="Learn more about the command line interface">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#historybackground" class="md-nav__link">
-    History/Background
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tutorials" class="md-nav__link">
-    Tutorials
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#reference-guides" class="md-nav__link">
-    Reference guides
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -465,6 +526,7 @@
 <p><em>Above: creating a new folder on your desktop via CLI (Windows 10)</em></p>
 </div>
 </div>
+<p>In the GUI, we can create a new folder by right-clicking on our desktop and selecting "new folder." In the CLI, we can perform the same action through text commands. In the example above, I first navigate to the desktop by typing "cd desktop" and then create a new folder by typing "mk-dir my_new_folder" (i.e., make a directory in the current location and call it my_new_folder). </p>
 <h2 id="why-use-the-command-line">Why use the command line?<a class="headerlink" href="#why-use-the-command-line" title="Permanent link">&para;</a></h2>
 <p>I have a mouse and applications...why even bother with the command line? </p>
 <ul>
@@ -473,10 +535,10 @@
 <li>Some functions are only available via CLI</li>
 <li>Can be more efficient for certain tasks</li>
 </ul>
-<h2 id="learn-more-about-the-command-line-interface">Learn more about the command line interface<a class="headerlink" href="#learn-more-about-the-command-line-interface" title="Permanent link">&para;</a></h2>
-<h3 id="historybackground">History/Background<a class="headerlink" href="#historybackground" title="Permanent link">&para;</a></h3>
-<h3 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="Permanent link">&para;</a></h3>
-<h3 id="reference-guides">Reference guides<a class="headerlink" href="#reference-guides" title="Permanent link">&para;</a></h3>
+<h2 id="learn-more">Learn more<a class="headerlink" href="#learn-more" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://github.com/adaptlearning/adapt_authoring/wiki/Just-Enough-Command-Line-for-Installing">Learn "just enough command line" to install programs</a></li>
+</ul>
                 
                   
                     
@@ -504,6 +566,41 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../css/" title="CSS" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                CSS
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../git-github/" title="Git and Github" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Git and Github
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
