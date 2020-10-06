@@ -1,4 +1,11 @@
 
+.md-typeset {
+    font-size: .9rem;
+    line-height: 1.6;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+}
+
 .md-typeset h1 {
     margin: 0 0 px2em(40px, 32px);
     color: var(--md-default-fg-color--light);
