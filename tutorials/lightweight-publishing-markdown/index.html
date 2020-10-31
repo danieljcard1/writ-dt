@@ -11,7 +11,7 @@
         <meta name="description" content="Documentation site for teaching and learning to write with digital technology.">
       
       
-        <link rel="canonical" href="https://danieljcard1.github.io/writ-dt/explainers/wireframing-prototyping/">
+        <link rel="canonical" href="https://danieljcard1.github.io/writ-dt/tutorials/lightweight-publishing-markdown/">
       
       
         <meta name="author" content="Dan Card">
@@ -21,7 +21,7 @@
     
     
       
-        <title>Wireframing & prototyping - Writing with Digital Tech</title>
+        <title>Lightweight publishing with Markdown - Writing with Digital Tech</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#wireframing-prototyping" class="md-skip">
+        <a href="#lightweight-publishing-with-markdown" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Wireframing & prototyping
+              Lightweight publishing with Markdown
             
           </span>
         </div>
@@ -181,7 +181,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../text-editor/" class="md-tabs__link">
+        <a href="../../explainers/text-editor/" class="md-tabs__link">
           Explainers
         </a>
       
@@ -194,7 +194,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../tutorials/build-local-static-HTML-site/" class="md-tabs__link">
+        <a href="../build-local-static-HTML-site/" class="md-tabs__link">
           Guides
         </a>
       
@@ -292,7 +292,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../text-editor/" title="Text editor" class="md-nav__link">
+    <a href="../../explainers/text-editor/" title="Text editor" class="md-nav__link">
       Text editor
     </a>
   </li>
@@ -304,7 +304,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../html/" title="HTML" class="md-nav__link">
+    <a href="../../explainers/html/" title="HTML" class="md-nav__link">
       HTML
     </a>
   </li>
@@ -316,7 +316,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../css/" title="CSS" class="md-nav__link">
+    <a href="../../explainers/css/" title="CSS" class="md-nav__link">
       CSS
     </a>
   </li>
@@ -328,7 +328,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../command-line-interface/" title="Command line interface" class="md-nav__link">
+    <a href="../../explainers/command-line-interface/" title="Command line interface" class="md-nav__link">
       Command line interface
     </a>
   </li>
@@ -340,7 +340,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../git-github/" title="Git and Github" class="md-nav__link">
+    <a href="../../explainers/git-github/" title="Git and Github" class="md-nav__link">
       Git and Github
     </a>
   </li>
@@ -352,7 +352,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../markdown/" title="Markdown" class="md-nav__link">
+    <a href="../../explainers/markdown/" title="Markdown" class="md-nav__link">
       Markdown
     </a>
   </li>
@@ -390,7 +390,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tutorials/build-local-static-HTML-site/" title="Build a static website, part 1 (HTML)" class="md-nav__link">
+    <a href="../build-local-static-HTML-site/" title="Build a static website, part 1 (HTML)" class="md-nav__link">
       Build a static website, part 1 (HTML)
     </a>
   </li>
@@ -402,7 +402,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tutorials/static-site-css/" title="Build a static website, part 2 (CSS)" class="md-nav__link">
+    <a href="../static-site-css/" title="Build a static website, part 2 (CSS)" class="md-nav__link">
       Build a static website, part 2 (CSS)
     </a>
   </li>
@@ -414,7 +414,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tutorials/publish-site-github-pages/" title="Publish your site with Github Pages" class="md-nav__link">
+    <a href="../publish-site-github-pages/" title="Publish your site with Github Pages" class="md-nav__link">
       Publish your site with Github Pages
     </a>
   </li>
@@ -487,15 +487,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#frameworks" class="md-nav__link">
-    Frameworks
+  <a href="#install-jekyll-dependencies" class="md-nav__link">
+    Install jekyll dependencies
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#tools" class="md-nav__link">
-    Tools
+  <a href="#create-a-new-jekyll-site" class="md-nav__link">
+    Create a new Jekyll site
   </a>
   
 </li>
@@ -516,12 +516,18 @@
                   
                 
                 
-                <h1 id="wireframing-prototyping">Wireframing &amp; prototyping<a class="headerlink" href="#wireframing-prototyping" title="Permanent link">&para;</a></h1>
-<h2 id="frameworks">Frameworks<a class="headerlink" href="#frameworks" title="Permanent link">&para;</a></h2>
-<h2 id="tools">Tools<a class="headerlink" href="#tools" title="Permanent link">&para;</a></h2>
+                <h1 id="lightweight-publishing-with-markdown">Lightweight publishing with Markdown<a class="headerlink" href="#lightweight-publishing-with-markdown" title="Permanent link">&para;</a></h1>
 <ul>
-<li><a href="https://www.figma.com/">Figma</a></li>
+<li>Static site generator. We'll use jekyll, which requires Ruby.</li>
+<li>Markdown &amp; text editor</li>
 </ul>
+<h2 id="install-jekyll-dependencies">Install jekyll dependencies<a class="headerlink" href="#install-jekyll-dependencies" title="Permanent link">&para;</a></h2>
+<p>Follow the guide for your operating system to install <a href="https://jekyllrb.com/docs/installation/">jekyll and dependencies</a>. You'll probably first have to install Ruby and then Jekyll. </p>
+<p>Confirm that jekyll has been installed correctly.</p>
+<h2 id="create-a-new-jekyll-site">Create a new Jekyll site<a class="headerlink" href="#create-a-new-jekyll-site" title="Permanent link">&para;</a></h2>
+<p>Follow <a href="https://jekyllrb.com/docs/">jekyll Quickstart</a> to create a new site. If you already installed Ruby and Jekyll, you can skip to step 2: Install the jekyll and bundler gems</p>
+<p>If you successfully created your site, you should see something like this when you navigate to <a href="http://127.0.0.1:4000/">http://127.0.0.1:4000/</a>.</p>
+<p><img _:="{:" alt="screenshot" loading="lazy" src="../assets/jekyll-new-myblog.png" style="border-style:solid; border-width:1px" title="New jekyll blog" /></p>
                 
                   
                     
