@@ -21,7 +21,7 @@
     
     
       
-        <title>Lightweight publishing with Markdown - Writing with Digital Tech</title>
+        <title>Get started with MkDocs and Markdown - Writing with Digital Tech</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#lightweight-publishing-with-markdown" class="md-skip">
+        <a href="#get-started-with-mkdocs-and-markdown" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Lightweight publishing with Markdown
+              Get started with MkDocs and Markdown
             
           </span>
         </div>
@@ -162,14 +162,16 @@
         
           
 
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href="../.." class="md-tabs__link md-tabs__link--active">
+      <a href="../.." class="md-tabs__link">
         Home
       </a>
     
@@ -194,7 +196,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../build-local-static-HTML-site/" class="md-tabs__link">
+        <a href="../build-local-static-HTML-site/" class="md-tabs__link md-tabs__link--active">
           Guides
         </a>
       
@@ -352,6 +354,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../explainers/static-site-generator/" title="Static site generator" class="md-nav__link">
+      Static site generator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../explainers/markdown/" title="Markdown" class="md-nav__link">
       Markdown
     </a>
@@ -367,10 +381,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Guides
@@ -417,6 +433,77 @@
     <a href="../publish-site-github-pages/" title="Publish your site with Github Pages" class="md-nav__link">
       Publish your site with Github Pages
     </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Get started with MkDocs and Markdown
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="Get started with MkDocs and Markdown" class="md-nav__link md-nav__link--active">
+      Get started with MkDocs and Markdown
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-dependencies-create-a-new-project" class="md-nav__link">
+    Install dependencies &amp; create a new project
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-content" class="md-nav__link">
+    Add content
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-your-navigation" class="md-nav__link">
+    Configure your navigation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explore" class="md-nav__link">
+    Explore!
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -487,15 +574,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install-jekyll-dependencies" class="md-nav__link">
-    Install jekyll dependencies
+  <a href="#install-dependencies-create-a-new-project" class="md-nav__link">
+    Install dependencies &amp; create a new project
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-a-new-jekyll-site" class="md-nav__link">
-    Create a new Jekyll site
+  <a href="#add-content" class="md-nav__link">
+    Add content
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-your-navigation" class="md-nav__link">
+    Configure your navigation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explore" class="md-nav__link">
+    Explore!
   </a>
   
 </li>
@@ -516,18 +617,49 @@
                   
                 
                 
-                <h1 id="lightweight-publishing-with-markdown">Lightweight publishing with Markdown<a class="headerlink" href="#lightweight-publishing-with-markdown" title="Permanent link">&para;</a></h1>
-<ul>
-<li>Static site generator. We'll use jekyll, which requires Ruby.</li>
-<li>Markdown &amp; text editor</li>
-</ul>
-<h2 id="install-jekyll-dependencies">Install jekyll dependencies<a class="headerlink" href="#install-jekyll-dependencies" title="Permanent link">&para;</a></h2>
-<p>Follow the guide for your operating system to install <a href="https://jekyllrb.com/docs/installation/">jekyll and dependencies</a>. You'll probably first have to install Ruby and then Jekyll. </p>
-<p>Confirm that jekyll has been installed correctly.</p>
-<h2 id="create-a-new-jekyll-site">Create a new Jekyll site<a class="headerlink" href="#create-a-new-jekyll-site" title="Permanent link">&para;</a></h2>
-<p>Follow <a href="https://jekyllrb.com/docs/">jekyll Quickstart</a> to create a new site. If you already installed Ruby and Jekyll, you can skip to step 2: Install the jekyll and bundler gems</p>
-<p>If you successfully created your site, you should see something like this when you navigate to <a href="http://127.0.0.1:4000/">http://127.0.0.1:4000/</a>.</p>
-<p><img _:="{:" alt="screenshot" loading="lazy" src="../assets/jekyll-new-myblog.png" style="border-style:solid; border-width:1px" title="New jekyll blog" /></p>
+                <h1 id="get-started-with-mkdocs-and-markdown">Get started with MkDocs and Markdown<a class="headerlink" href="#get-started-with-mkdocs-and-markdown" title="Permanent link">&para;</a></h1>
+<p>The <a href="explainers/static-site-generator.md">static site generator</a> (SSG) I'm using is <a href="https://www.mkdocs.org/">MkDocs</a>. I'll be using the command line to install MkDocs, create a MkDocs project, and preview the documentation.</p>
+<h2 id="install-dependencies-create-a-new-project">Install dependencies &amp; create a new project<a class="headerlink" href="#install-dependencies-create-a-new-project" title="Permanent link">&para;</a></h2>
+<p>In order to install MkDocs, you may need to install python and pip. You can follow MkDocs' <a href="https://www.mkdocs.org/#installation">installation instructions</a>. </p>
+<p>If you aren't confident in the command line, I've also recorded <a href="https://umn.zoom.us/rec/play/fjcW20p8nqIEs_aP_76wi5NR5CSMJE571A4XNtNCx0bPs6DhLK0ivgxQ6FjYT_UwG-5srJweSUTo_Ilc.aGQ3yo0D9lkvHtRu?startTime=1604869570000">a short video</a> in which I walk through some the installation.</p>
+<h2 id="add-content">Add content<a class="headerlink" href="#add-content" title="Permanent link">&para;</a></h2>
+<p>When you create a new project, MkDocs generates a folder and some files. </p>
+<p><div class="highlight"><pre><span></span><code>lavadocs
+│  
+└───mkdocs.yml
+│  
+└───docs
+    │   index.md
+</code></pre></div>
+The .yml file allows you to configure your site, e.g. set the theme, define the navigation, activate extensions. </p>
+<p>You'll store your site content in the "docs" folder. By default, index.md will be your homepage. </p>
+<p>Let's say you want three more pages: About, Resume, and Contact. You would put three additional markdown pages in your "docs" folder.</p>
+<p><div class="highlight"><pre><span></span><code>lavadocs
+│  
+└───mkdocs.yml
+│  
+└───docs
+    │   index.md
+    │   about.md
+    │   resume.md
+    │   contact.md
+</code></pre></div>
+Some themes allow multiple levels or navigation, and each theme comes with CSS that determines how the various markdown elements look and behave. </p>
+<h2 id="configure-your-navigation">Configure your navigation<a class="headerlink" href="#configure-your-navigation" title="Permanent link">&para;</a></h2>
+<p>Most themes will automatically incorporate your markdown pages into the resulting site, but you can also control the navigation by modifying mkdocs.yml. In the example below, I've created four nav items: Home, About, Resume, and Contact.</p>
+<p><div class="highlight"><pre><span></span><code><span class="lineno" data-linenos="1 "></span>site_name: My Docs
+<span class="lineno" data-linenos="2 "></span>
+<span class="lineno" data-linenos="3 "></span>nav:
+<span class="lineno" data-linenos="4 "></span>  - Home: index.md
+<span class="lineno" data-linenos="5 "></span>  - About: about.md
+<span class="lineno" data-linenos="6 "></span>  - Resume: resume.md
+<span class="lineno" data-linenos="7 "></span>  - Contact: contact.md
+<span class="lineno" data-linenos="8 "></span>
+<span class="lineno" data-linenos="9 "></span>theme: readthedocs
+</code></pre></div>
+Mkdocs comes with two themes. Above you see I've opted for the Read the Docs theme. </p>
+<h2 id="explore">Explore!<a class="headerlink" href="#explore" title="Permanent link">&para;</a></h2>
+<p>Preview, build, and theme your site with help from MkDocs' <a href="https://www.mkdocs.org/#getting-started">Getting Started</a> documentation.</p>
                 
                   
                     
@@ -536,7 +668,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: 2020-11-02
+      Last update: 2020-11-09
     
   </small>
 </div>
@@ -555,6 +687,41 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../publish-site-github-pages/" title="Publish your site with Github Pages" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Publish your site with Github Pages
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../../tools/tools/" title="Sketching, wireframing, and prototyping" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Sketching, wireframing, and prototyping
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
