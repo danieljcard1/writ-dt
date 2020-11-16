@@ -4,8 +4,8 @@ A site developed for use in *Writing with Digital Technologies*, taught in the D
 
 ## Contents
 
-* Short explainers written by and for technical communicators
-* Tutorials 
+* Short explainers
+* Helpful guides/tutorials 
 
 ## How to Build the Site Locally
 
