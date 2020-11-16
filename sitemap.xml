@@ -1,55 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://danieljcard1.github.io/writ-dt/</loc>
-     <lastmod>2020-11-09</lastmod>
+     <lastmod>2020-11-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://danieljcard1.github.io/writ-dt/explainers/text-editor/</loc>
-     <lastmod>2020-11-09</lastmod>
+     <lastmod>2020-11-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://danieljcard1.github.io/writ-dt/explainers/html/</loc>
-     <lastmod>2020-11-09</lastmod>
+     <lastmod>2020-11-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://danieljcard1.github.io/writ-dt/explainers/css/</loc>
-     <lastmod>2020-11-09</lastmod>
+     <lastmod>2020-11-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://danieljcard1.github.io/writ-dt/explainers/command-line-interface/</loc>
-     <lastmod>2020-11-09</lastmod>
+     <lastmod>2020-11-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://danieljcard1.github.io/writ-dt/explainers/git-github/</loc>
-     <lastmod>2020-11-09</lastmod>
+     <lastmod>2020-11-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://danieljcard1.github.io/writ-dt/explainers/static-site-generator/</loc>
-     <lastmod>2020-11-09</lastmod>
+     <lastmod>2020-11-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://danieljcard1.github.io/writ-dt/explainers/markdown/</loc>
-     <lastmod>2020-11-09</lastmod>
+     <lastmod>2020-11-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://danieljcard1.github.io/writ-dt/explainers/dita/</loc>
+     <lastmod>2020-11-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://danieljcard1.github.io/writ-dt/tutorials/build-local-static-HTML-site/</loc>
-     <lastmod>2020-11-09</lastmod>
+     <lastmod>2020-11-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://danieljcard1.github.io/writ-dt/tutorials/static-site-css/</loc>
-     <lastmod>2020-11-09</lastmod>
+     <lastmod>2020-11-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://danieljcard1.github.io/writ-dt/tutorials/publish-site-github-pages/</loc>
-     <lastmod>2020-11-09</lastmod>
+     <lastmod>2020-11-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://danieljcard1.github.io/writ-dt/tutorials/lightweight-publishing-markdown/</loc>
-     <lastmod>2020-11-09</lastmod>
+     <lastmod>2020-11-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://danieljcard1.github.io/writ-dt/tools/tools/</loc>
-     <lastmod>2020-11-09</lastmod>
+     <lastmod>2020-11-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
